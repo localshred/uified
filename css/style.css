@@ -1,0 +1,135 @@
+/*
+Theme Name: Uified
+Theme URI: http://github.com/localshred/uified
+Description: Provides a simple html/css/javascript interface for creating unobtrusive UI elements
+Author: BJ Neilsen, rand9 LLC
+Author URI: http://www.rand9.com
+Version: 1.0
+.
+I've compiled this work for the open source community. Please link me if you find this interface useful.
+.
+*/
+
+/* Some Defaults for example.html, not necessarily tied to UIfied */
+#wrapper
+{
+	width: 1024px;
+	margin: 0 auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;;
+}
+
+#footer
+{
+	margin-top: 30px;
+	text-align: center;
+	font-style: italic;
+	color: #999;
+}
+
+/****************/
+/* Tab Links UI */
+/****************/
+
+ul.tab-links
+{
+	list-style: none;
+	margin: 20px 0 0 30px;
+	padding: 0;
+}
+
+ul.tab-links li
+{
+	float: left;
+	margin: 0 5px 0 0;
+	padding: 0;
+}
+
+ul.tab-links li a
+{
+	background: #999;
+	color: #fff !important;
+	padding: 3px 15px;
+	text-decoration: none;
+}
+
+ul.tab-links li a.cur
+{
+	font-weight: bold;
+	background: #333;
+}
+
+a.toggle-link
+{
+	font-size: 12px;
+}
+
+.tab-box,
+.generic-box
+{
+	border: 2px dashed #999;
+	padding: 15px;
+}
+
+.toggle-box
+{
+	
+}
+
+.grid-items .item
+{
+	float: left;
+	margin: 5px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px dashed #eee;
+	padding: 10px;
+	width: 70px;
+	height: 70px;
+}
+
+.list-items .item
+{
+	float: none;
+	border: 1px dashed #eee;
+	vertical-align: middle;
+	padding: 5px 10px;
+}
+
+.grid-items .item:hover,
+.list-items .item:hover
+{
+	border: 1px solid #999;
+}
+
+.expanded,
+div.expanded
+{
+	display: block;
+}
+
+span.expanded
+{
+	display: inline;
+}
+
+.collapsed
+{
+	display: none;
+}
+
+/* Clearfix hack (renamed to cf) */
+.cf:after
+{
+	height: 0;
+	display: block;
+	content: ".";
+	visibility: hidden;
+	clear: both;
+}
+
+/* IE Fix */
+html > body .cf
+{
+	min-height: 1px;
+	height: auto;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>UIfied Example :: Created by BJ Neilsen</title>
+
+		<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+		<meta name="author" content="BJ Neilsen" />
+		<meta name="copyright" content="BJ Neilsen, rand9 LLC 2009" />
+		<meta name="language" content="en" />
+	
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/uified.js"></script>
+	</head>
+
+	<body id="application-body">
+
+		<div id="wrapper">
+			<h1 id="logo">UIfied Examples</h1>
+
+			<p></p>
+
+			<p>
+				<a href="#tab-links" title="Tab Links UI">Tab Links UI</a>&nbsp;|&nbsp;
+				<a href="#toggle-box" title="Toggle Box UI">Toggle Box UI</a>&nbsp;|&nbsp;
+				<a href="#data-view" title="Data View UI">Data View UI</a>
+			</p>
+
+			<hr style="margin: 20px 0;">
+		
+			<div id="tabs-example">
+				<h3><a name="tab-links"></a>Tab Links</h3>
+			
+				<p>The <span class="strong">Tab Links</span> UI element is a simple way to define a list of links that simply show/hide the appropriate container elements, creating a fast UI experience to toggle between similarly grouped elements. This is useful in many instances, most notably on a site where the user profile section has multiple sub-sections.</p>
+			
+				<ul class="tab-links cf">
+					<li><a href="javascript: void(0);" id="link-tab-links-example" class="cur">Example</a></li>
+					<li><a href="javascript: void(0);" id="link-tab-links-source">Code</a></li>
+				</ul>
+			
+				<div id="tab-links-example" class="tab-box">
+					<p>All of the "Examples" and "Code" sections in this example file are using the Tab Links UI interface. (Note that different instances of Tab Links UI appear on the same page. All UI elements shown here allow for multiple instances per rendered page.)</p>
+				</div>
+				<div id="tab-links-source" class="tab-box collapsed">
+					<pre><code>
+&lt;ul class"tab-links cf"&gt;
+	&lt;li&gt;&lt;a href="javascript: void(0);" id="link-tab-links-example" class="cur"&gt;Example&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="javascript: void(0);" id="link-tab-links-source"&gt;Code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id="tab-links-example" class="tab-box"&gt;
+	All of the "Examples" and "Code" sections in this example file are using the Tab Links UI interface.
+&lt;/div&gt;
+&lt;div id="tab-links-source" class="tab-box collapsed"&gt;
+	&lt;pre&gt;&lt;code&gt;
+		...
+	&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+					</code></pre>
+				</div>
+			
+			</div>
+		
+			<hr style="margin: 20px 0;">
+		
+			<div id="toggle-example">
+				<h3><a name="toggle-box"></a>Toggle Box</h3>
+			
+				<p>Often times in UI design, we have a portion of the interface we want to hide so it doesn't clutter the view. However, the hidden information should be accessible to those looking for something more, such as Search Tips waiting next to a search form on your site.</p>
+			
+				<ul class="tab-links cf">
+					<li><a href="javascript: void(0);" id="link-toggle-box-example" class="cur">Example</a></li>
+					<li><a href="javascript: void(0);" id="link-toggle-box-source">Code</a></li>
+				</ul>
+			
+				<div id="toggle-box-example" class="tab-box">
+					<p>Click the links below to get some fabulous tips on UI Design.</p>
+
+					<p><a href="javascript: void(0);" id="link-toggle-ui-tips" class="toggle-link" title="Toggle UI Tips">Toggle UI Tips</a></p>
+					<div id="ui-tips" class="toggle-box collapsed">
+						<ul>
+							<li>To get the users' attention, use the <code>&lt;BLINK&gt;</code> tag.</li>
+							<li>Be sure all tags are in UPPERCASE (e.g. <code>&lt;FONT COLOR=#FFFFFF&gt;UI Design is FUN!&lt;/FONT&gt;</code>)</li>
+							<li>Always design your layouts using Tables.</li>
+							<li>Take a cold shower if you really do any things on this list. Then rethink your life.</li>
+						</ul>
+					</div>
+				
+					<p><a href="javascript: void(0);" id="link-toggle-other-ui-tips" class="toggle-link" title="Toggle UI Tips">Toggle Other UI Tips</a></p>
+					<div id="other-ui-tips" class="toggle-box collapsed">
+						<ul>
+							<li>Make sure you really want to use XHTML. Go ahead, <a href="http://en.wikipedia.org/wiki/Tag_soup#HTML_compared_to_XHTML" title="research">research</a> <a href="http://norman.walsh.name/2004/01/17/xhtml/application-xhtml" title="it">it</a>.</li>
+							<li>Listen to your users. They're the ones who are paying you.</li>
+							<li>Interface Simplicity is Bliss.</li>
+						</ul>
+					</div>
+				
+				</div>
+				<div id="toggle-box-source" class="tab-box collapsed">
+					<pre><code>
+&lt;p&gt;&lt;a href="javascript: void(0);" id="link-toggle-my-hidden-element" class="toggle-link" title="Toggle My Hidden Element"&gt;Toggle My Hidden Element&lt;/a&gt;&lt;/p&gt;
+&lt;div id="my-hidden-element" class="toggle-box collapsed"&gt;
+	All of your hidden yet accessible elements go here. Secretive, I know.
+&lt;/div&gt;
+					</code></pre>
+				</div>
+			
+			</div>
+
+			<hr style="margin: 20px 0;">
+
+			<div id="toggle-example">
+				<h3><a name="data-view"></a>Data View</h3>
+
+				<p>Users should get the final say on how their data is presented to them, at least, if it doesn't take designers 10 years to customize the different views for them. Two simple ways to display a list of information is in List form (surprise!) and Grid form. If your data is an image and a title, grid form works best (such as iPhoto or Picasa). However, if your data contains variable lengths (such as user profile descriptions), a list view may be a better default fit. The Data View UI allows users to toggle between the two views (without invoking AJAX to rebuild the data).</p>
+			
+				<p>The Data View UI also supports any other view option you can think of, you just need to define the styles for it.</p>
+
+				<ul class="tab-links cf">
+					<li><a href="javascript: void(0);" id="link-list-example" class="cur">Example</a></li>
+					<li><a href="javascript: void(0);" id="link-list-source">Code</a></li>
+				</ul>
+
+				<div id="list-example" class="tab-box">
+					<p>Display as:
+						<a href="javascript: void(0);" id="link-display-list-my-data" class="display-link" title="Display as List">List</a>&nbsp;&nbsp;
+						<a href="javascript: void(0);" id="link-display-grid-my-data" class="display-link" title="Display as Grid">Grid</a>&nbsp;&nbsp;
+					</p>
+
+					<div id="my-data" class="grid-items cf">
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+						<div class="item"><img src="http://www.gravatar.com/avatar/922e30b7ab3e03428ac5e48eae58f63f.jpg?r=pg&d=identicon&s=50" alt=""><br>Data Title</div>
+					</div>
+
+				</div>
+				<div id="list-source" class="tab-box collapsed">
+					<pre><code>
+&lt;p&gt;Display as:
+	&lt;a href="javascript: void(0);" id="link-display-list-my-data" class="display-link" title="Display as List"&gt;List&lt;/a&gt;&nbsp;&nbsp;
+	&lt;a href="javascript: void(0);" id="link-display-grid-my-data" class="display-link" title="Display as Grid"&gt;Grid&lt;/a&gt;&nbsp;&nbsp;
+&lt;/p&gt;
+
+&lt;div id="my-data" class="grid-items cf"&gt;
+	&lt;div class="item"&gt;
+		&lt;img src="image.jpg" alt="my image"&gt;&lt;br&gt;
+		Data Title
+	&lt;/div&gt;
+	...etc...
+&lt;/div&gt;
+					</code></pre>
+				</div>
+
+			</div>
+
+			<div id="footer">
+				&copy; 2009 BJ Neilsen and rand9 Technologies, LLC
+			</div>
+
+		</div>
+
+	</body>
+</html>
